@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+/* making heading */
+header{
+    
+    display: flex;
+    justify-content: space-between;
+    background-color: #00000091;
+    padding: 20px 0;
+    width: 100%
+}
+
+.logo-header{
+    text-decoration: none;
+    
+}
+.logo-header .navbar{
+    text-decoration: none;
+    
+}
+header nav ul li{
+    list-style: none;
+    display: inline;
+    
+}
+header nav ul li a{
+    padding: 0 25px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    transition: all 0.5s;
+}
+header nav ul li a:hover{
+    color:  #00cdce;
+    text-decoration: none;
+}
+header nav ul li a:hover::after {
+    opacity: 0;
+}
+
+
+header a{
+    font-size: 56px;
+}
+header nav{
+    padding-top: 30px;
+}
+header a span{
+    color: #00cdce;;
+}
+#animation{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    animation-name: DemoAnimation;
+    animation-duration: 2s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+header nav ul li a{
+    transform: translateY();
+    transition: all 0.5s;
+    position: relative;
+
+    
+}
+header nav ul li a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    margin: -14px 10px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+header nav ul li a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 2px;
+    
+    margin: -14px 10px;
+    
+    opacity: 1;
+}
+
+
+/* slide picture */
+
+.carousel-inner .carousel-item{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+.carousel-inner .item1{
+    background-image: url("../images/b1.jpg");
+}
+.carousel-inner .item2{
+    background-image: url("../images/b2.jpg");
+}
+.carousel-inner .item3{
+    background-image: url("../images/b3.jpg");
+}
+.carousel-inner .item4{
+    background-image: url("../images/b4.jpg");
+}
+
+.carousel-indicators li{
+    width: 12px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.carousel-inner .text-move{
+    padding: 350px 30px;
+}
+.carousel-inner .carousel-caption h3{
+        font-size: 50px;
+        font-weight: bolder;
+}
+/* about */
+
+#about h1{
+    text-align: center;
+}
+
+#about .about-content{
+    display: flex;
+    display: flex;
+    
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 100px;
+}
+#service h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 5rem 0;
+    font-weight: bold;
+}
+
+#about .about-content .about-item i{
+    width: 25%;
+    height: 100px;
+    border-radius: 100%;
+    border: 1px solid black;
+    padding: 35px;
+    font-size: 25px;
+    
+}
+#about .about-content .about-item i:hover{
+    width: 25%;
+    height: 100px;
+    border-radius: 100%;
+    border: 1px solid black;
+    padding: 35px;
+    font-size: 25px;
+    background-color: #00cdce;
+    color: white;
+    animation: all 1s;
+}
